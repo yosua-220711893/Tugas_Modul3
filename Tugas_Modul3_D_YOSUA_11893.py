@@ -59,7 +59,7 @@ st.markdown(
 st.markdown(
     """
     <div class="center">
-        <img src="https://media.tenor.com/oqJ9o6CbfjYAAAAi/welcome-images-server.gif" alt="Welcome Image">
+        <img src="https://media.tenor.com/oqJo9GcbfjYAAAAi/welcome-images-server.gif" alt="Welcome Image">
     </div>
     """, unsafe_allow_html=True
 )
@@ -78,8 +78,7 @@ if uploaded_file is not None:
     st.write("<h3 style='text-align: center; color: #0073e6;'>Data yang diupload:</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_directory = r'C:\Pemrograman Web\Tugas3_D_11893'
-    model_path = os.path.join(model_directory, r'SVR_IPK_model.pkl')
+    model_path = r'SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
